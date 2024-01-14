@@ -1,4 +1,5 @@
-p.pesado {font-weight: bolder;}
+.pesado {font-weight: bolder;
+text-align:left;}
 
 body {background-color: rgb(201, 191, 248);}
 
