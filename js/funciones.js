@@ -68,7 +68,7 @@ else{
 
 
  function purchaseClicked(){
-     alert('Thank you for your purchase!!!');
+     alert('Gracias por su compra!!!');
      var cartItems = document.getElementsByClassName('cart-items')[0];
      while(cartItems.hasChildNodes()){
          cartItems.removeChild(cartItems.firstChild)
@@ -110,7 +110,7 @@ function addItemToCart(title, price, imageSrc){
 
     for (i = 0; i< cartItemNames.length ; i++){
         if(cartItemNames[i].innerText == title){
-            alert('This item already has added to the cart!');
+            alert('Este producto ya está en el carro');
             return
         }
     }
@@ -151,6 +151,6 @@ function updateCartTotal(){
          
     }
     total = Math.round(total * 100 )/100;
-    document.getElementsByClassName('cart-total-price')[0].innerText = total + 'pesos';
+    document.getElementsByClassName('cart-total-price')[0].innerText = total + '000 pesos';
  
 }
